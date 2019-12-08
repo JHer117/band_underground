@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="C:\Users\white\Desktop\My Projects\Band Underground\static\edit_band_post.css">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='edit_band_post.css') }}">
+
+    <title>Band Underground - Dude, Check out this band!</title>
+
+
+</head>
+<body>
+
+    <div id="wrapper">
+        
+        <div id="header">
+            <h1>Band <span>Underground</span></h1>
+            <h3 id="motto">Dude, Check out this band!</h3>
+        </div>
+
+        <div id="header_links">
+            <a href="/profile/{{user}}">My Profile</a>
+            
+            <a class="head_links" href="/underground/dashboard">Home</a>
+            <a class="head_links" href="/logout">Logout</a>
+        </div>
+
+        
+        <div id="flash_msg">
+            {% with messages = get_flashed_messages() %}     
+                {% if messages %}                            
+                    {% for message in messages %}
+                        <p>{{message}}</p>                   
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </div>
+       
+        <div id="band_info">
+            <h4 id="your_band_header">Edit Band Info</h4>
+            
+
+            <div id="update_band_form">
+                <form id="update_post" action="/update_band/{{bands.id}}" method="POST">
+                    <p>Band Name</p>
+                    <input id="name" name="band_name" type="text" value="{{bands.band_name}}">
+                    <p>Location</p>
+                    <input id="local" name="local" type="text" value="{{bands.location}}">
+                    <p>Description/Info</p>
+                    <textarea id="descrip" name="descrip" cols="30" rows="5" >{{bands.description}}</textarea>
+                    <br>
+                    <input id="edit_btn" type="submit" value="Save">
+
+                    <a id="cancel" href="/profile/{{user}}"><button>Cancel</button></a>
+                </form>
+            </div>
+                
+
+
+        </div>
+
+
+        
+
+        <div id="footer">
+            <a href="/profile/{{user}}">My Profile</a>
+            <a href="/underground/dashboard">Home</a>
+            
+            <a href="/logout">Logout</a>
+        </div>
+
+
+    </div>
+
+
+
+    
+</body>
+</html>

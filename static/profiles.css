@@ -1,0 +1,132 @@
+*{
+    color: rgb(0, 148, 153);
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0 auto;
+    width: 0 auto;
+    background-color: rgb(241, 242, 245);
+}
+
+#wrapper{
+    text-align: center;
+}
+
+span{
+    color: rgb(35, 39, 48);
+    text-shadow: 0 0 3px rgb(162, 247, 253), 0 0 5px rgb(85, 64, 143);
+    font-weight: bolder;
+}
+
+h1{
+    margin-top: 0px;
+    
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0%;
+    right: 0%;
+    background-color: rgb(97, 97, 97);
+    width: 100%;
+    height: 75px;
+    padding-bottom:10px;
+    
+}
+
+#motto{
+    font-style: italic;
+    color: rgb(85, 64, 143);
+    text-shadow: 0 0 2px rgb(71, 141, 141) ;
+    background-color:rgb(97, 97, 97) ;
+}
+
+
+#header_links{
+    
+    margin-top: 102px;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+#header_links a{
+    
+    color: rgb(97, 97, 97);
+}
+
+#post_btn{
+    margin-bottom: 25px;
+}
+
+
+
+#flash_msg p{
+    color:rgb(80, 28, 110);
+    font-style: italic;
+}
+
+#profi_info{
+    margin-top: 40px;
+    text-align: initial;
+    padding-left: 200px;
+}
+
+#your_profi_header{
+    color: rgb(35, 39, 48);
+    text-shadow: 0 0 3px rgb(162, 247, 253), 0 0 5px rgb(85, 64, 143);
+    font-weight: bolder;
+    text-decoration: underline;
+    text-decoration-color:rgb(85, 64, 143);
+}
+
+
+
+button{
+    color:rgb(85, 64, 143);
+    border-radius: 4px;
+}
+
+#profi_info button{
+    margin-left: 40px;
+}
+
+#posts_by_user{
+    text-align: initial;
+    padding-left: 200px;
+    margin-bottom: 40px;
+}
+
+
+#bands_shared_header{
+    color: rgb(35, 39, 48);
+    text-shadow: 0 0 3px rgb(162, 247, 253), 0 0 5px rgb(85, 64, 143);
+    font-weight: bolder;
+    text-decoration: underline;
+    text-decoration-color:rgb(85, 64, 143);
+}
+
+#posts_by_user a{
+    color: rgb(122, 24, 131);
+}
+
+#edit_lnk{
+    margin-left: 41px;
+}
+
+
+
+#footer{
+    background-color: rgb(97, 97, 97);
+    position: fixed;
+    bottom: 0;
+    padding: 15px;
+    right: 0;
+    left: 0;
+    
+}
+
+#footer a{
+    
+    color: rgb(71, 141, 141) ;
+}

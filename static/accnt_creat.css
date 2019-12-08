@@ -1,0 +1,133 @@
+*{
+    color: rgb(0, 148, 153);
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0 auto;
+    width: 0 auto;
+    background-color: rgb(241, 242, 245);
+}
+
+#wrapper{
+    text-align: center;
+}
+
+span{
+    color: rgb(35, 39, 48);
+    text-shadow: 0 0 3px rgb(162, 247, 253), 0 0 5px rgb(85, 64, 143);
+    font-weight: bolder;
+}
+
+h1{
+    margin-top: 0px;
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0%;
+    right: 0%;
+    background-color: rgb(97, 97, 97);
+    width: 100%;
+    height: 75px;
+    padding-bottom:10px;
+    
+}
+
+#motto{
+    font-style: italic;
+    color: rgb(85, 64, 143);
+    text-shadow: 0 0 2px rgb(71, 141, 141) ;
+    background-color:rgb(97, 97, 97) ;
+}
+
+
+button{
+    color:rgb(85, 64, 143);
+    border-radius: 4px;
+}
+
+#flash_msg p{
+    color:rgb(80, 28, 110);
+    font-style: italic;
+}
+
+#create_accnt_form{
+    margin-top: 100px;
+}
+
+#add_user_form{
+    display: inline-block;
+    width: 610px;
+}
+
+#fname{
+    display: inline-block;
+    margin-bottom: 0px;
+    padding: 4%;
+    margin-left: -17px;
+    color: black;
+
+}
+
+#lname{
+    display: inline-block;
+    margin-bottom: 0px;
+    padding: 4%;
+    margin-left: -20px;
+    color: black;
+
+    
+}
+
+#em{
+    display: block;
+    margin-bottom: 25px;
+    margin-right: 32px;
+    color: black;
+}
+
+#un{
+    display: block;
+    margin-bottom: 25px;
+    margin-right: 65px;
+    color: black;
+}
+
+#un_descrip{
+    text-decoration: underline;
+    text-decoration-color: rgb(152, 151, 197);
+
+}
+
+#pw{
+    display: block;
+    margin-bottom: 25px;
+    margin-right: 58px;
+    color: black;
+}
+
+#con_pw{
+    display: block;
+    margin-bottom: 25px;
+    margin-right: 115px;
+    color: black;
+   
+}
+
+#join_btn{
+    display: inline-block;
+    padding: 2%;
+    width: 174px;
+    border: 3px inset rgb(79, 94, 112);
+    border-radius: 5px;
+    font-size: medium;
+}
+
+a{
+    color: rgb(110, 171, 245) ;
+    font-size: small;
+    position: fixed;
+    bottom: 15px;
+    right: 3%;
+}

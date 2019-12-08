@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="C:\Users\white\Desktop\My Projects\Band Underground\static\front_page.css">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='front_page.css') }}">
+
+    <title>Band Underground - Dude, Check out this band!</title>
+
+
+
+</head>
+<body>
+
+    <div id="wrapper">
+
+        <div id="header">
+            <h1>Band <span>Underground</span></h1>
+            <h3 id="motto">Dude, Check out this band!</h3>
+        </div>
+
+        <div id="header_links">
+            <div id="profi_youtube_links">
+                <a id="profi_link" href="/profile/{{user_id}}">My Profile</a>
+                <a id="youtbe_link" href="https://www.youtube.com/results?search_query=upcoming+bands+2019">Youtube</a>
+            
+            <a id="logout_link" href="/logout">Logout</a>
+        </div>
+
+        <div id="flash_msg">
+            {% with messages = get_flashed_messages() %}     
+                {% if messages %}                            
+                    {% for message in messages %}
+                        <p>{{message}}</p>                   
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </div>
+
+        <div id="feed">
+            <h2 id="feed_header">Your Feed</h2> 
+            
+
+            
+            <a id="post_btn" href="/post_band"><button>Post A Band</button></a>
+            <div id="post_box">
+                
+                <!-- FIX TO DISPLAY PROPER USERNAME OF POSTER  -->
+                {% for post in posts  %}
+                <p id="post_by">Posted By: <span>{{post.author.username}}</span></p>
+                
+                
+                <div id="posts">
+           
+                        
+                    <h3 id="band_name_title">Band Name</h3>
+                    <p id="bandname">{{post.band_name}}</p>
+                    
+                    <h4 id="band_local">Location</h4>
+                    <p id="location">{{post.location}}</p>
+                    
+                    <h4 id="descrip">Description</h4>
+                    <textarea readonly name="description" id="band_descrip" cols="30" rows="5">{{post.description}}</textarea>
+                    
+                        
+                </div>
+                <br><br><br>
+                <hr>
+                {% endfor %}
+                
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+        
+        <div id="footer">
+            <a href="/profile/{{user_id}}">My Profile</a>
+            
+            <a href="/underground/dashboard">Back To Top</a>
+            <a href="/logout">Logout</a>
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+    
+</body>
+</html>

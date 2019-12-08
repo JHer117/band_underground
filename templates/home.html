@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="C:\Users\white\Desktop\My Projects\Band Underground\static\home_ss.css">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='home_ss.css') }}">
+     
+
+    <title>Band Underground- Dude, check out this band!</title>
+
+
+
+    
+</head>
+<body>
+    <div id="wrapper">
+        
+        <div id="header">
+            <h1>Band <span>Underground</span></h1>
+            <h3 id="motto">Dude, Check out this band!</h3>
+        </div>
+
+
+        
+        <div id="valid_username"><!-- JQUERY MSG HERE --></div>
+        <div id="login_header">
+            <div id="flash_msg">
+                {% with messages = get_flashed_messages() %}     
+                    {% if messages %}                            
+                        {% for message in messages %}
+                            <p>{{message}}</p>                   
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+            </div>
+            <!-- <h2>Welcome to the <span>Underground</span>!</h2> -->
+            <h4>Sign In Below</h4>
+
+            <form id="login_form" action="/login" method="POST">
+                <input id="em" type="text" name="em" placeholder="Email">
+                <input id="pw" type="password" name="pw" placeholder="Password">
+                <input id="login_btn" type="submit" value="Sign In">
+            </form>
+
+        </div>
+        <hr>
+        <div id="create_accnt">
+
+            <a id="create_accnt_link" href="/create_account"><button>Join the <span>Underground</span></button></a>
+        </div>
+
+
+
+
+
+    </div>
+
+
+    
+</body>
+</html>

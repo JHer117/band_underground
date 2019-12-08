@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="C:\Users\white\Desktop\My Projects\Band Underground\static\accnt_creat.css">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='accnt_creat.css') }}">
+
+
+    <title>Band Underground- Dude, check out this band!</title>
+
+</head>
+<body>
+
+    <div id="wrapper">
+    
+            <div id="header">
+                <h1>Band <span>Underground</span></h1>
+                <h3 id="motto">Dude, Check out this band!</h3>
+            </div>
+            
+            
+            <div id="name_taken"><!-- JQUERY MSG HERE --></div>
+            
+            <h2>Join the Underground</h2>
+            
+            <div id="flash_msg">
+                {% with messages = get_flashed_messages() %}     
+                    {% if messages %}                            
+                        {% for message in messages %}
+                            <p>{{message}}</p>                   
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+            </div>
+
+            <div id="create_accnt_form">
+                <form id="add_user_form" action="/add_user" method="POST">
+                    <p id="fname">First Name <input type="text" name="fname" placeholder="Or whatever..."></p>
+                    <p id="lname">Last Name <input type="text" name="lname" placeholder="Or Make something up..."></p>
+                    <p id="em">Email <input type="text" name="em" placeholder="cool_email@cool.com"></p>
+                    <p id="un">Username <input type="text" name="username" placeholder="'CoolUsername247'"></p>
+                    <p id="un_descrip">Either a <span>band name</span> or a sick <span>username</span> everyone will know you by.</p>
+                    <p id="pw">Password <input type="password" name="pass" placeholder="Keep it secret..."></p>
+                    <p id="con_pw">Confirm Password <input type="password" name="con_pw" placeholder="Keep it safe!"></p>
+                    <input id="join_btn" type="submit" value="Join">
+                </form>
+            </div>
+
+            <a href="/">Return to Sign In</a>
+
+    
+    
+        </div>
+
+
+    
+</body>
+</html>

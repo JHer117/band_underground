@@ -1,0 +1,108 @@
+*{
+    color: rgb(0, 148, 153);
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0 auto;
+    width: 0 auto;
+    background-color: rgb(241, 242, 245);
+}
+
+#wrapper{
+    text-align: center;
+}
+
+span{
+    color: rgb(35, 39, 48);
+    text-shadow: 0 0 3px rgb(162, 247, 253), 0 0 5px rgb(85, 64, 143);
+    font-weight: bolder;
+}
+
+h1{
+    margin-top: 0px;
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0%;
+    right: 0%;
+    background-color: rgb(97, 97, 97);
+    width: 100%;
+    height: 75px;
+    padding-bottom:10px;
+    
+}
+
+#motto{
+    font-style: italic;
+    color: rgb(85, 64, 143);
+    text-shadow: 0 0 2px rgb(71, 141, 141) ;
+    background-color:rgb(97, 97, 97) ;
+}
+
+#flash_msg p{
+    
+    color:rgb(80, 28, 110);
+    font-style: italic;
+}
+
+#login_header{
+    margin-top: 150px;
+}
+
+
+
+#login_header h4{
+    margin-bottom: 50px;
+    text-decoration: underline;
+    text-decoration-color: rgb(97, 97, 97);
+
+}
+
+#login_form{
+    display: inline-block;
+}
+
+#em{
+    display: block;
+    margin-bottom: 10px;
+    padding: 4%;
+    border: 2px outset rgb(92, 92, 92);
+    border-radius: 5px;
+    
+}
+
+button{
+    color:rgb(85, 64, 143);
+    border-radius: 4px;
+}
+
+#pw{
+    display: block;
+    margin-bottom: 10px;
+    padding: 4%;
+    border: 2px outset rgb(92, 92, 92);
+    border-radius: 5px;
+}
+
+#login_btn{
+    display: inline-block;
+    margin-bottom: 50px;
+    padding: 4%;
+    width: 174px;
+    border: 3px inset rgb(79, 94, 112);
+    border-radius: 5px;
+}
+
+#create_accnt{
+    margin-top: 50px;
+}
+
+#create_accnt_link button{
+    margin-left: 8px;
+    padding: 10px;
+    width: 235px;
+    border: 3px inset rgb(79, 94, 112);
+    border-radius: 5px;
+}
