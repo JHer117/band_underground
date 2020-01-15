@@ -1,6 +1,11 @@
 from sqlalchemy.sql import func
 from config import db
 import bcrypt
+                          
+                          #         ^^^^ 
+#add "likes" table - likes are \m/ ( >_<) \m/    HORNS!!!!
+                          #     --    U    --
+                            #    --        --
 
 class Users(db.Model):
     __tablename__ = "users"
