@@ -6,6 +6,10 @@ body{
     margin: 0 auto;
     width: 0 auto;
     background-color: rgb(241, 242, 245);
+
+    background-image: url("https://i.imgur.com/GIwwXZl.jpg");
+    background-size: cover;
+    background-repeat: repeat;
 }
 
 #wrapper{
@@ -56,7 +60,7 @@ h1{
 
 #flash_msg p{
     margin-top: 20px;
-    color:rgb(80, 28, 110);
+    color:rgb(154, 79, 197);
     font-style: italic;
 }
 
